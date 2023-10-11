@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "myprogressbar.h"
+#include "spinbox.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -15,8 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void OpenProgressBar();
+    void OpenSpinBox();
+
 private:
     Ui::MainWindow *ui;
+    MyProgressBar *progressBar;
+    SpinBox *spinBox;
 };
 
 #endif // MAINWINDOW_H

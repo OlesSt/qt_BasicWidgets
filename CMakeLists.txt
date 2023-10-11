@@ -18,6 +18,15 @@ add_executable(qt_BasicWidgets
   mainwindow.h
   mainwindow.cpp
   mainwindow.ui
+
+  myprogressbar.h
+  myprogressbar.cpp
+  myprogressbar.ui
+
+  spinbox.h
+  spinbox.cpp
+  spinbox.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 
