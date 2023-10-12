@@ -5,6 +5,7 @@
 #include "myprogressbar.h"
 #include "spinbox.h"
 #include "myslider.h"
+#include "myradiobutton.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -22,12 +23,14 @@ public slots:
     void OpenProgressBar();
     void OpenSpinBox();
     void OpenSlider();
+    void OpenRadioButton();
 
 private:
     Ui::MainWindow *ui;
     MyProgressBar *progressBar;
     SpinBox *spinBox;
     MySlider *mySlider;
+    MyRadioButton *radioButton;
 };
 
 #endif // MAINWINDOW_H
