@@ -27,6 +27,10 @@ add_executable(qt_BasicWidgets
   spinbox.cpp
   spinbox.ui
 
+  myslider.h
+  myslider.cpp
+  myslider.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 

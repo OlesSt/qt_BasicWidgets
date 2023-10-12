@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "myprogressbar.h"
 #include "spinbox.h"
+#include "myslider.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -20,11 +21,13 @@ public:
 public slots:
     void OpenProgressBar();
     void OpenSpinBox();
+    void OpenSlider();
 
 private:
     Ui::MainWindow *ui;
     MyProgressBar *progressBar;
     SpinBox *spinBox;
+    MySlider *mySlider;
 };
 
 #endif // MAINWINDOW_H
