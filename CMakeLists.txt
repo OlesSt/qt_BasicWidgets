@@ -39,6 +39,18 @@ add_executable(qt_BasicWidgets
   messagedialog.cpp
   messagedialog.ui
 
+  listwidget.h
+  listwidget.cpp
+  listwidget.ui
+
+  lcdnumber.h
+  lcdnumber.cpp
+  lcdnumber.ui
+
+  inputdialog.h
+  inputdialog.cpp
+  inputdialog.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 

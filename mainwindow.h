@@ -7,6 +7,9 @@
 #include "myslider.h"
 #include "myradiobutton.h"
 #include "messagedialog.h"
+#include "listwidget.h"
+#include "lcdnumber.h"
+#include "inputdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -26,6 +29,9 @@ public slots:
     void OpenSlider();
     void OpenRadioButton();
     void OpenMessageDialog();
+    void OpenListWidget();
+    void OpenLCDNumber();
+    void OpenInputDialog();
 
 private:
     Ui::MainWindow *ui;
@@ -34,6 +40,10 @@ private:
     MySlider *mySlider;
     MyRadioButton *radioButton;
     MessageDialog *messageDialog;
+    ListWidget *listWidget;
+    LcdNumber *lcdNumber;
+    InputDialog *inputDialog;
+
 };
 
 #endif // MAINWINDOW_H
