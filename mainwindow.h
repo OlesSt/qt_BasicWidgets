@@ -6,6 +6,7 @@
 #include "spinbox.h"
 #include "myslider.h"
 #include "myradiobutton.h"
+#include "messagedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -24,6 +25,7 @@ public slots:
     void OpenSpinBox();
     void OpenSlider();
     void OpenRadioButton();
+    void OpenMessageDialog();
 
 private:
     Ui::MainWindow *ui;
@@ -31,6 +33,7 @@ private:
     SpinBox *spinBox;
     MySlider *mySlider;
     MyRadioButton *radioButton;
+    MessageDialog *messageDialog;
 };
 
 #endif // MAINWINDOW_H
