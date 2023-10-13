@@ -16,6 +16,7 @@
 #include "lineedit.h"
 #include "table.h"
 #include "animationstate.h"
+#include "animationproperty.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -44,6 +45,7 @@ public slots:
     void OpenLineEdit();
     void OpenTable();
     void OpenAnimationState();
+    void OpenAnimationProperty();
 
 private:
     Ui::MainWindow  *ui;
@@ -60,7 +62,9 @@ private:
     Calendar        *calendar;
     LineEdit        *lineEdit;
     Table           *table;
-    AnimationState  *animationState;
+
+    AnimationState      *animationState;
+    AnimationProperty   *animationProperty;
 
 
 };

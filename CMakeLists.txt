@@ -74,6 +74,10 @@ add_executable(qt_BasicWidgets
   animationstate.h
   animationstate.cpp
   animationstate.ui
+
+  animationproperty.h
+  animationproperty.cpp
+  animationproperty.ui
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::StateMachine)
 

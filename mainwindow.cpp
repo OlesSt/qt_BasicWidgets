@@ -21,7 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
     calendar        = new Calendar();
     lineEdit        = new LineEdit();
     table           = new Table();
-    animationState  = new AnimationState();
+
+    animationState    = new AnimationState();
+    animationProperty = new AnimationProperty();
 
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
@@ -37,6 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushLineEdit,       SIGNAL(clicked(bool)), this, SLOT(OpenLineEdit()));
     connect(ui->pushTable,          SIGNAL(clicked(bool)), this, SLOT(OpenTable()));
     connect(ui->pushAnimation,      SIGNAL(clicked(bool)), this, SLOT(OpenAnimationState()));
+    connect(ui->pushAnimation_2,    SIGNAL(clicked(bool)), this, SLOT(OpenAnimationProperty()));
 }
 
 MainWindow::~MainWindow()
@@ -54,6 +57,7 @@ MainWindow::~MainWindow()
     delete lineEdit;
     delete table;
     delete animationState;
+    delete animationProperty;
 
     delete ui;
 }
@@ -72,3 +76,4 @@ void MainWindow::OpenCalendar()         { calendar->show();}
 void MainWindow::OpenLineEdit()         { lineEdit->show();}
 void MainWindow::OpenTable()            { table->show();}
 void MainWindow::OpenAnimationState()   { animationState->show();}
+void MainWindow::OpenAnimationProperty(){ animationProperty->show();}
