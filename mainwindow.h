@@ -18,6 +18,7 @@
 #include "animationstate.h"
 #include "animationproperty.h"
 #include "charts.h"
+#include "paintclock.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -48,6 +49,7 @@ public slots:
     void OpenAnimationState();
     void OpenAnimationProperty();
     void OpenChart();
+    void OpenPaintClock();
 
 private:
     Ui::MainWindow  *ui;
@@ -68,7 +70,8 @@ private:
     AnimationState      *animationState;
     AnimationProperty   *animationProperty;
 
-    Charts *chart;
+    Charts          *chart;
+    PaintClock      *paintClock;
 
 
 

@@ -82,6 +82,10 @@ add_executable(qt_BasicWidgets
   charts.h
   charts.cpp
   charts.ui
+
+  paintclock.h
+  paintclock.cpp
+  paintclock.ui
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::StateMachine Qt${QT_VERSION_MAJOR}::Charts)
 

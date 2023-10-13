@@ -26,6 +26,8 @@ MainWindow::MainWindow(QWidget *parent)
     animationState    = new AnimationState();
     animationProperty = new AnimationProperty();
 
+    paintClock      = new PaintClock();
+
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
     connect(ui->pushSlider,         SIGNAL(clicked(bool)), this, SLOT(OpenSlider()));
@@ -42,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushAnimation,      SIGNAL(clicked(bool)), this, SLOT(OpenAnimationState()));
     connect(ui->pushAnimation_2,    SIGNAL(clicked(bool)), this, SLOT(OpenAnimationProperty()));
     connect(ui->pushChart,          SIGNAL(clicked(bool)), this, SLOT(OpenChart()));
+    connect(ui->pushClock,          SIGNAL(clicked(bool)), this, SLOT(OpenPaintClock()));
 }
 
 MainWindow::~MainWindow()
@@ -60,6 +63,8 @@ MainWindow::~MainWindow()
     delete table;
     delete animationState;
     delete animationProperty;
+    delete chart;
+    delete paintClock;
 
     delete ui;
 }
@@ -80,3 +85,4 @@ void MainWindow::OpenTable()            { table->show();}
 void MainWindow::OpenAnimationState()   { animationState->show();}
 void MainWindow::OpenAnimationProperty(){ animationProperty->show();}
 void MainWindow::OpenChart()            { chart->show();}
+void MainWindow::OpenPaintClock()       { paintClock->show();}
