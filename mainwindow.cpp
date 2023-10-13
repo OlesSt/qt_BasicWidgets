@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     inputDialog     = new InputDialog();
     comboBox        = new ComboBox();
     checkBox        = new CheckBox();
+    calendar        = new Calendar();
 
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
@@ -29,6 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushInputDialog,    SIGNAL(clicked(bool)), this, SLOT(OpenInputDialog()));
     connect(ui->pushComboBox,       SIGNAL(clicked(bool)), this, SLOT(OpenComboBox()));
     connect(ui->pushCheckBox,       SIGNAL(clicked(bool)), this, SLOT(OpenCheckBox()));
+    connect(ui->pushCalendar,       SIGNAL(clicked(bool)), this, SLOT(OpenCalendar()));
 }
 
 MainWindow::~MainWindow()
@@ -42,6 +44,7 @@ MainWindow::~MainWindow()
     delete lcdNumber;
     delete inputDialog;
     delete checkBox;
+    delete calendar;
 
     delete ui;
 }
@@ -56,3 +59,4 @@ void MainWindow::OpenLCDNumber()    { lcdNumber->show();}
 void MainWindow::OpenInputDialog()  { inputDialog->show();}
 void MainWindow::OpenComboBox()     { comboBox->show();}
 void MainWindow::OpenCheckBox()     { checkBox->show();}
+void MainWindow::OpenCalendar()     { calendar->show();}

@@ -59,6 +59,10 @@ add_executable(qt_BasicWidgets
   checkbox.cpp
   checkbox.ui
 
+  calendar.h
+  calendar.cpp
+  calendar.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 

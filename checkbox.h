@@ -17,7 +17,7 @@ public:
 
 public slots:
     void ChooseCheckBox();
-    void UpdateCheck();
+//    void UpdateCheck();
 
 private:
     Ui::CheckBox *ui;
