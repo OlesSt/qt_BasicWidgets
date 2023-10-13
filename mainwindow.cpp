@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     listWidget      = new ListWidget();
     lcdNumber       = new LcdNumber();
     inputDialog     = new InputDialog();
+    comboBox        = new ComboBox();
 
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
@@ -25,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushListWidget,     SIGNAL(clicked(bool)), this, SLOT(OpenListWidget()));
     connect(ui->pushLCD,            SIGNAL(clicked(bool)), this, SLOT(OpenLCDNumber()));
     connect(ui->pushInputDialog,    SIGNAL(clicked(bool)), this, SLOT(OpenInputDialog()));
+    connect(ui->pushComboBox,       SIGNAL(clicked(bool)), this, SLOT(OpenComboBox()));
 }
 
 MainWindow::~MainWindow()
@@ -49,3 +51,4 @@ void MainWindow::OpenMessageDialog(){ messageDialog->show();}
 void MainWindow::OpenListWidget()   { listWidget->show();}
 void MainWindow::OpenLCDNumber()    { lcdNumber->show();}
 void MainWindow::OpenInputDialog()  { inputDialog->show();}
+void MainWindow::OpenComboBox()     { comboBox->show();}

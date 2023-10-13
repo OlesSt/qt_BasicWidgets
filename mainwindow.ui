@@ -20,12 +20,12 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>11</x>
       <y>10</y>
-      <width>581</width>
+      <width>582</width>
       <height>581</height>
      </rect>
     </property>
@@ -93,13 +93,6 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushFontBox">
-         <property name="text">
-          <string>FontComboBox</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushComboBox">
          <property name="text">
           <string>ComboBox</string>
@@ -160,13 +153,6 @@
         <widget class="QPushButton" name="pushAnimation_2">
          <property name="text">
           <string>Animation 2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushPushBotton">
-         <property name="text">
-          <string>PushBotton</string>
          </property>
         </widget>
        </item>

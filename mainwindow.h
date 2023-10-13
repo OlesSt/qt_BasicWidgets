@@ -10,6 +10,7 @@
 #include "listwidget.h"
 #include "lcdnumber.h"
 #include "inputdialog.h"
+#include "combobox.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -32,6 +33,7 @@ public slots:
     void OpenListWidget();
     void OpenLCDNumber();
     void OpenInputDialog();
+    void OpenComboBox();
 
 private:
     Ui::MainWindow *ui;
@@ -43,6 +45,8 @@ private:
     ListWidget *listWidget;
     LcdNumber *lcdNumber;
     InputDialog *inputDialog;
+    ComboBox *comboBox;
+
 
 };
 
