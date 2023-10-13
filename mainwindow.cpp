@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     calendar        = new Calendar();
     lineEdit        = new LineEdit();
     table           = new Table();
+    chart           = new Charts();
 
     animationState    = new AnimationState();
     animationProperty = new AnimationProperty();
@@ -40,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushTable,          SIGNAL(clicked(bool)), this, SLOT(OpenTable()));
     connect(ui->pushAnimation,      SIGNAL(clicked(bool)), this, SLOT(OpenAnimationState()));
     connect(ui->pushAnimation_2,    SIGNAL(clicked(bool)), this, SLOT(OpenAnimationProperty()));
+    connect(ui->pushChart,          SIGNAL(clicked(bool)), this, SLOT(OpenChart()));
 }
 
 MainWindow::~MainWindow()
@@ -77,3 +79,4 @@ void MainWindow::OpenLineEdit()         { lineEdit->show();}
 void MainWindow::OpenTable()            { table->show();}
 void MainWindow::OpenAnimationState()   { animationState->show();}
 void MainWindow::OpenAnimationProperty(){ animationProperty->show();}
+void MainWindow::OpenChart()            { chart->show();}

@@ -17,6 +17,7 @@
 #include "table.h"
 #include "animationstate.h"
 #include "animationproperty.h"
+#include "charts.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -46,6 +47,7 @@ public slots:
     void OpenTable();
     void OpenAnimationState();
     void OpenAnimationProperty();
+    void OpenChart();
 
 private:
     Ui::MainWindow  *ui;
@@ -65,6 +67,10 @@ private:
 
     AnimationState      *animationState;
     AnimationProperty   *animationProperty;
+
+    Charts *chart;
+
+
 
 
 };
