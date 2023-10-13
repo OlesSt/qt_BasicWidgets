@@ -63,6 +63,10 @@ add_executable(qt_BasicWidgets
   calendar.cpp
   calendar.ui
 
+  lineedit.h
+  lineedit.cpp
+  lineedit.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 

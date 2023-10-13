@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     comboBox        = new ComboBox();
     checkBox        = new CheckBox();
     calendar        = new Calendar();
+    lineEdit        = new LineEdit();
 
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
@@ -31,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushComboBox,       SIGNAL(clicked(bool)), this, SLOT(OpenComboBox()));
     connect(ui->pushCheckBox,       SIGNAL(clicked(bool)), this, SLOT(OpenCheckBox()));
     connect(ui->pushCalendar,       SIGNAL(clicked(bool)), this, SLOT(OpenCalendar()));
+    connect(ui->pushLineEdit,       SIGNAL(clicked(bool)), this, SLOT(OpenLineEdit()));
 }
 
 MainWindow::~MainWindow()
@@ -60,3 +62,4 @@ void MainWindow::OpenInputDialog()  { inputDialog->show();}
 void MainWindow::OpenComboBox()     { comboBox->show();}
 void MainWindow::OpenCheckBox()     { checkBox->show();}
 void MainWindow::OpenCalendar()     { calendar->show();}
+void MainWindow::OpenLineEdit()     { lineEdit->show();}

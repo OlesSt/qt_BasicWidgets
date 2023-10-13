@@ -13,6 +13,7 @@
 #include "combobox.h"
 #include "checkbox.h"
 #include "calendar.h"
+#include "lineedit.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -38,6 +39,7 @@ public slots:
     void OpenComboBox();
     void OpenCheckBox();
     void OpenCalendar();
+    void OpenLineEdit();
 
 private:
     Ui::MainWindow *ui;
@@ -52,6 +54,7 @@ private:
     ComboBox *comboBox;
     CheckBox *checkBox;
     Calendar *calendar;
+    LineEdit *lineEdit;
 
 
 };
