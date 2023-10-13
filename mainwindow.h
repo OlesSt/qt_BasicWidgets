@@ -19,6 +19,7 @@
 #include "animationproperty.h"
 #include "charts.h"
 #include "paintclock.h"
+#include "dragdrop.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -50,6 +51,7 @@ public slots:
     void OpenAnimationProperty();
     void OpenChart();
     void OpenPaintClock();
+    void OpenDragDrop();
 
 private:
     Ui::MainWindow  *ui;
@@ -72,6 +74,7 @@ private:
 
     Charts          *chart;
     PaintClock      *paintClock;
+    DragDrop        *dragDrop;
 
 
 

@@ -86,6 +86,10 @@ add_executable(qt_BasicWidgets
   paintclock.h
   paintclock.cpp
   paintclock.ui
+
+  dragdrop.h
+  dragdrop.cpp
+  dragdrop.ui
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::StateMachine Qt${QT_VERSION_MAJOR}::Charts)
 
