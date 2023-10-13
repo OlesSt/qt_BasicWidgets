@@ -20,6 +20,7 @@
 #include "charts.h"
 #include "paintclock.h"
 #include "dragdrop.h"
+#include "diagram.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -52,6 +53,7 @@ public slots:
     void OpenChart();
     void OpenPaintClock();
     void OpenDragDrop();
+    void OpenDiagram();
 
 private:
     Ui::MainWindow  *ui;
@@ -75,10 +77,7 @@ private:
     Charts          *chart;
     PaintClock      *paintClock;
     DragDrop        *dragDrop;
-
-
-
-
+    Diagram         *diagram;
 };
 
 #endif // MAINWINDOW_H

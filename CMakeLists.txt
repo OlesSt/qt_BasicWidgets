@@ -90,6 +90,10 @@ add_executable(qt_BasicWidgets
   dragdrop.h
   dragdrop.cpp
   dragdrop.ui
+
+  diagram.h
+  diagram.cpp
+  diagram.ui
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::StateMachine Qt${QT_VERSION_MAJOR}::Charts)
 

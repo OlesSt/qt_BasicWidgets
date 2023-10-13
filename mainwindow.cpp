@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     paintClock      = new PaintClock();
     dragDrop        = new DragDrop();
+    diagram         = new Diagram();
 
     connect(ui->pushProgressBar,    SIGNAL(clicked(bool)), this, SLOT(OpenProgressBar()));
     connect(ui->pushSpinBox,        SIGNAL(clicked(bool)), this, SLOT(OpenSpinBox()));
@@ -47,6 +48,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushChart,          SIGNAL(clicked(bool)), this, SLOT(OpenChart()));
     connect(ui->pushClock,          SIGNAL(clicked(bool)), this, SLOT(OpenPaintClock()));
     connect(ui->pushDragDrop,       SIGNAL(clicked(bool)), this, SLOT(OpenDragDrop()));
+    connect(ui->pushDiagrams,       SIGNAL(clicked(bool)), this, SLOT(OpenDiagram()));
 }
 
 MainWindow::~MainWindow()
@@ -90,3 +92,4 @@ void MainWindow::OpenAnimationProperty(){ animationProperty->show();}
 void MainWindow::OpenChart()            { chart->show();}
 void MainWindow::OpenPaintClock()       { paintClock->show();}
 void MainWindow::OpenDragDrop()         { dragDrop->show();}
+void MainWindow::OpenDiagram()          { diagram->show();}
