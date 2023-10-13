@@ -15,6 +15,7 @@
 #include "calendar.h"
 #include "lineedit.h"
 #include "table.h"
+#include "animationstate.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -42,6 +43,7 @@ public slots:
     void OpenCalendar();
     void OpenLineEdit();
     void OpenTable();
+    void OpenAnimationState();
 
 private:
     Ui::MainWindow  *ui;
@@ -58,6 +60,7 @@ private:
     Calendar        *calendar;
     LineEdit        *lineEdit;
     Table           *table;
+    AnimationState  *animationState;
 
 
 };
