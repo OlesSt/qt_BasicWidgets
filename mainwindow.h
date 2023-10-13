@@ -11,6 +11,7 @@
 #include "lcdnumber.h"
 #include "inputdialog.h"
 #include "combobox.h"
+#include "checkbox.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -34,6 +35,7 @@ public slots:
     void OpenLCDNumber();
     void OpenInputDialog();
     void OpenComboBox();
+    void OpenCheckBox();
 
 private:
     Ui::MainWindow *ui;
@@ -46,6 +48,7 @@ private:
     LcdNumber *lcdNumber;
     InputDialog *inputDialog;
     ComboBox *comboBox;
+    CheckBox *checkBox;
 
 
 };

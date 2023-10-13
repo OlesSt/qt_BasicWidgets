@@ -55,6 +55,10 @@ add_executable(qt_BasicWidgets
   combobox.cpp
   combobox.ui
 
+  checkbox.h
+  checkbox.cpp
+  checkbox.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 
