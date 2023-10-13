@@ -14,6 +14,7 @@
 #include "checkbox.h"
 #include "calendar.h"
 #include "lineedit.h"
+#include "table.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow;}
@@ -40,21 +41,23 @@ public slots:
     void OpenCheckBox();
     void OpenCalendar();
     void OpenLineEdit();
+    void OpenTable();
 
 private:
-    Ui::MainWindow *ui;
-    MyProgressBar *progressBar;
-    SpinBox *spinBox;
-    MySlider *mySlider;
-    MyRadioButton *radioButton;
-    MessageDialog *messageDialog;
-    ListWidget *listWidget;
-    LcdNumber *lcdNumber;
-    InputDialog *inputDialog;
-    ComboBox *comboBox;
-    CheckBox *checkBox;
-    Calendar *calendar;
-    LineEdit *lineEdit;
+    Ui::MainWindow  *ui;
+    MyProgressBar   *progressBar;
+    SpinBox         *spinBox;
+    MySlider        *mySlider;
+    MyRadioButton   *radioButton;
+    MessageDialog   *messageDialog;
+    ListWidget      *listWidget;
+    LcdNumber       *lcdNumber;
+    InputDialog     *inputDialog;
+    ComboBox        *comboBox;
+    CheckBox        *checkBox;
+    Calendar        *calendar;
+    LineEdit        *lineEdit;
+    Table           *table;
 
 
 };

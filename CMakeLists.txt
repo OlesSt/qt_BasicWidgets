@@ -67,6 +67,10 @@ add_executable(qt_BasicWidgets
   lineedit.cpp
   lineedit.ui
 
+  table.h
+  table.cpp
+  table.ui
+
 )
 target_link_libraries(qt_BasicWidgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)
 
